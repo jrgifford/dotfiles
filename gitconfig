@@ -12,6 +12,7 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
