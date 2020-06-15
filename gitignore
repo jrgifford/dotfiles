@@ -1,4 +1,7 @@
 !tags/
+.tool-versions
+kickouts.csv
+/artifacts
 *.pyc
 *.sw[nop]
 .DS_Store

@@ -16,7 +16,8 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
-	editor = vim
+  editor = vim
+  abbrev = 8
 [merge]
   ff = only
 [commit]
@@ -35,7 +36,13 @@
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
   name = James Gifford
-  email = james@armyofminions.com
-#  signingkey = 1DDA6D379A3F5643CB1943F91E3B896EBFFF50D3
+  email = james.gifford@upstart.com
+  signingkey = BFFF50D3
 [commit]
-#  gpgsign = true
+  gpgsign = false
+[log]
+  abbrevcommit = yes
+[gpg]
+  program = gpg
+[diff "secret"]
+  textconv = /Users/jamesgifford/code/upstart/infra-secrets/bin/secrets diff
